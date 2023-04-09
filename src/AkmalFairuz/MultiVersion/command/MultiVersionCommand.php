@@ -9,7 +9,7 @@ use AkmalFairuz\MultiVersion\MultiVersion;
 use AkmalFairuz\MultiVersion\network\ProtocolConstants;
 use pocketmine\command\CommandSender;
 use pocketmine\command\PluginCommand;
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat;
 use function count;
