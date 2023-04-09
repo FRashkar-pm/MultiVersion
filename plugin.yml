@@ -1,9 +1,9 @@
 name: MultiVersion
-api: 3.28.0
+api: 4.0.0
 main: AkmalFairuz\MultiVersion\Loader
 version: 0.486.1
 description: A plugin to allows older Minecraft client versions to connect to newer server versions.
-mcpe-protocol: 486
+mcpe-protocol: [560, 575]
 author: AkmalFairuz
 permissions:
   multiversion.command:
