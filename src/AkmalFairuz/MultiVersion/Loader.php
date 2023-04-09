@@ -8,7 +8,7 @@ use AkmalFairuz\MultiVersion\command\MultiVersionCommand;
 use AkmalFairuz\MultiVersion\network\convert\MultiVersionCraftingManager;
 use AkmalFairuz\MultiVersion\network\convert\MultiVersionRuntimeBlockMapping;
 use AkmalFairuz\MultiVersion\task\CheckUpdateTask;
-use pocketmine\inventory\CraftingManager;
+use pocketmine\crafting\CraftingManager;
 use pocketmine\plugin\PluginBase;
 use pocketmine\scheduler\ClosureTask;
 use function in_array;
@@ -31,7 +31,7 @@ class Loader extends PluginBase{
         return self::$instance;
     }
 
-    public function onEnable(){
+    public function onEnable(): void{
         self::$instance = $this;
 
         foreach($this->getResources() as $k => $v) {
